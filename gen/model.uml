@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_-j7agApkEeeu17WP7eLWEA" name="Machine">
+    <packageImport xmi:id="_-kvS0ApkEeeu17WP7eLWEA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://TXTUML_STDLIB/stdlib.uml#_DE5UMHLCEeWVx4ZuxFlarQ"/>
+    </packageImport>
+    <packageImport xmi:id="_-l7loApkEeeu17WP7eLWEA">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_-tiCcApkEeeu17WP7eLWEA" name="Buy"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_-tj3oApkEeeu17WP7eLWEA" name="Buy" signal="_-tiCcApkEeeu17WP7eLWEA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-tls0ApkEeeu17WP7eLWEA" name="#Buy_factory">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_-tu2wApkEeeu17WP7eLWEA" name="Buy" specification="_-tp-QApkEeeu17WP7eLWEA"/>
+      <ownedOperation xmi:id="_-tp-QApkEeeu17WP7eLWEA" name="Buy" isStatic="true" method="_-tu2wApkEeeu17WP7eLWEA">
+        <ownedParameter xmi:id="_-tuPsApkEeeu17WP7eLWEA" name="signal" type="_-tiCcApkEeeu17WP7eLWEA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_-uE1AApkEeeu17WP7eLWEA" name="ClickOnOrder"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_-uE1AQpkEeeu17WP7eLWEA" name="ClickOnOrder" signal="_-uE1AApkEeeu17WP7eLWEA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-uFcEApkEeeu17WP7eLWEA" name="#ClickOnOrder_factory">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_-uGqMApkEeeu17WP7eLWEA" name="ClickOnOrder" specification="_-uFcEQpkEeeu17WP7eLWEA"/>
+      <ownedOperation xmi:id="_-uFcEQpkEeeu17WP7eLWEA" name="ClickOnOrder" isStatic="true" method="_-uGqMApkEeeu17WP7eLWEA">
+        <ownedParameter xmi:id="_-uGDIQpkEeeu17WP7eLWEA" name="signal" type="_-uE1AApkEeeu17WP7eLWEA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_-uIfYApkEeeu17WP7eLWEA" name="ClickOption"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_-uIfYQpkEeeu17WP7eLWEA" name="ClickOption" signal="_-uIfYApkEeeu17WP7eLWEA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-uJGcApkEeeu17WP7eLWEA" name="#ClickOption_factory">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_-uKUkQpkEeeu17WP7eLWEA" name="ClickOption" specification="_-uJGcQpkEeeu17WP7eLWEA"/>
+      <ownedOperation xmi:id="_-uJGcQpkEeeu17WP7eLWEA" name="ClickOption" isStatic="true" method="_-uKUkQpkEeeu17WP7eLWEA">
+        <ownedParameter xmi:id="_-uKUkApkEeeu17WP7eLWEA" name="signal" type="_-uIfYApkEeeu17WP7eLWEA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-uOmAApkEeeu17WP7eLWEA" name="Customer">
+      <generalization xmi:id="_-uYXAApkEeeu17WP7eLWEA" general="_-wIDcApkEeeu17WP7eLWEA"/>
+      <ownedAttribute xmi:id="_-uP0IApkEeeu17WP7eLWEA" name="card_info" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-uQbMApkEeeu17WP7eLWEA" name="customer_type" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-uQbMQpkEeeu17WP7eLWEA" name="email" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-uQbMgpkEeeu17WP7eLWEA" name="name" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-u1qAApkEeeu17WP7eLWEA" name="ticket_cart" type="_-v5Z8ApkEeeu17WP7eLWEA" aggregation="composite" association="_-ufEsApkEeeu17WP7eLWEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-u1qAQpkEeeu17WP7eLWEA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-u2REApkEeeu17WP7eLWEA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-u7woApkEeeu17WP7eLWEA" name="orders" type="_-vETgApkEeeu17WP7eLWEA" aggregation="composite" association="_-u7JkApkEeeu17WP7eLWEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-u8XsApkEeeu17WP7eLWEA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-u8XsQpkEeeu17WP7eLWEA" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_-uSQYApkEeeu17WP7eLWEA" name="Customer"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-ufEsApkEeeu17WP7eLWEA" name="Customer_Card" memberEnd="_-v5Z8QpkEeeu17WP7eLWEA _-u1qAApkEeeu17WP7eLWEA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-u7JkApkEeeu17WP7eLWEA" name="Customer_Order" memberEnd="_-vETgQpkEeeu17WP7eLWEA _-u7woApkEeeu17WP7eLWEA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-u_bAApkEeeu17WP7eLWEA" name="Maintenance">
+      <generalization xmi:id="_-vBQMApkEeeu17WP7eLWEA" general="_-wIDcApkEeeu17WP7eLWEA"/>
+      <ownedAttribute xmi:id="_-vACEApkEeeu17WP7eLWEA" name="login_Pass" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-vACEQpkEeeu17WP7eLWEA" name="login_id" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-vACEgpkEeeu17WP7eLWEA" name="report" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_-vACEwpkEeeu17WP7eLWEA" name="Maintenance"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-vETgApkEeeu17WP7eLWEA" name="Order">
+      <ownedAttribute xmi:id="_-vETgQpkEeeu17WP7eLWEA" name="customer" type="_-uOmAApkEeeu17WP7eLWEA" association="_-u7JkApkEeeu17WP7eLWEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-vETggpkEeeu17WP7eLWEA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-vETgwpkEeeu17WP7eLWEA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-vE6kApkEeeu17WP7eLWEA" name="date_created" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-vE6kQpkEeeu17WP7eLWEA" name="date_travelled" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-vE6kgpkEeeu17WP7eLWEA" name="status" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-vLBMQpkEeeu17WP7eLWEA" name="detail" type="_-vkp0ApkEeeu17WP7eLWEA" association="_-vLBMApkEeeu17WP7eLWEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-vLoQApkEeeu17WP7eLWEA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-vLoQQpkEeeu17WP7eLWEA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-vg_cApkEeeu17WP7eLWEA" name="travel_info" type="_-wCj4ApkEeeu17WP7eLWEA" association="_-vgYYApkEeeu17WP7eLWEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-vhmgApkEeeu17WP7eLWEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-vhmgQpkEeeu17WP7eLWEA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-vrXgApkEeeu17WP7eLWEA" name="ticket" type="_-v1IgApkEeeu17WP7eLWEA" aggregation="composite" association="_-vqwcApkEeeu17WP7eLWEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-vrXgQpkEeeu17WP7eLWEA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-vrXggpkEeeu17WP7eLWEA" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_-vFhoApkEeeu17WP7eLWEA" name="Order"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-vLBMApkEeeu17WP7eLWEA" name="OrderHasFunctions" memberEnd="_-vLBMQpkEeeu17WP7eLWEA _-vkp0QpkEeeu17WP7eLWEA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-vgYYApkEeeu17WP7eLWEA" name="OrderTravelInfo" memberEnd="_-wCj4QpkEeeu17WP7eLWEA _-vg_cApkEeeu17WP7eLWEA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-vkp0ApkEeeu17WP7eLWEA" name="Orders_Detail">
+      <ownedAttribute xmi:id="_-vkp0QpkEeeu17WP7eLWEA" name="orders" type="_-vETgApkEeeu17WP7eLWEA" aggregation="composite" association="_-vLBMApkEeeu17WP7eLWEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-vkp0gpkEeeu17WP7eLWEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-vkp0wpkEeeu17WP7eLWEA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-vkp1ApkEeeu17WP7eLWEA" name="quantity" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-vkp1QpkEeeu17WP7eLWEA" name="subtotal" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-vl38ApkEeeu17WP7eLWEA" name="unit_Cost" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-v-5gQpkEeeu17WP7eLWEA" name="ticket" type="_-v1IgApkEeeu17WP7eLWEA" association="_-v-5gApkEeeu17WP7eLWEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-v-5ggpkEeeu17WP7eLWEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-v_gkApkEeeu17WP7eLWEA" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_-vl38QpkEeeu17WP7eLWEA" name="Orders_Detail"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-vqwcApkEeeu17WP7eLWEA" name="ProductOrder" memberEnd="_-v1IgQpkEeeu17WP7eLWEA _-vrXgApkEeeu17WP7eLWEA"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_-vtzwApkEeeu17WP7eLWEA" name="Reselect"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_-vtzwQpkEeeu17WP7eLWEA" name="Reselect" signal="_-vtzwApkEeeu17WP7eLWEA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-vtzwgpkEeeu17WP7eLWEA" name="#Reselect_factory">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_-vvB4QpkEeeu17WP7eLWEA" name="Reselect" specification="_-vua0ApkEeeu17WP7eLWEA"/>
+      <ownedOperation xmi:id="_-vua0ApkEeeu17WP7eLWEA" name="Reselect" isStatic="true" method="_-vvB4QpkEeeu17WP7eLWEA">
+        <ownedParameter xmi:id="_-vvB4ApkEeeu17WP7eLWEA" name="signal" type="_-vtzwApkEeeu17WP7eLWEA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_-vw3EApkEeeu17WP7eLWEA" name="Stop"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_-vxeIApkEeeu17WP7eLWEA" name="Stop" signal="_-vw3EApkEeeu17WP7eLWEA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-vxeIQpkEeeu17WP7eLWEA" name="#Stop_factory">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_-vyFMQpkEeeu17WP7eLWEA" name="Stop" specification="_-vxeIgpkEeeu17WP7eLWEA"/>
+      <ownedOperation xmi:id="_-vxeIgpkEeeu17WP7eLWEA" name="Stop" isStatic="true" method="_-vyFMQpkEeeu17WP7eLWEA">
+        <ownedParameter xmi:id="_-vyFMApkEeeu17WP7eLWEA" name="signal" type="_-vw3EApkEeeu17WP7eLWEA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-v1IgApkEeeu17WP7eLWEA" name="Ticket">
+      <generalization xmi:id="_-v29sApkEeeu17WP7eLWEA" general="_-vETgApkEeeu17WP7eLWEA"/>
+      <ownedAttribute xmi:id="_-v1IgQpkEeeu17WP7eLWEA" name="orders" type="_-vETgApkEeeu17WP7eLWEA" association="_-vqwcApkEeeu17WP7eLWEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-v1IggpkEeeu17WP7eLWEA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-v1IgwpkEeeu17WP7eLWEA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-v1vkApkEeeu17WP7eLWEA" name="price" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-v1vkQpkEeeu17WP7eLWEA" name="ticketName" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-v1vkgpkEeeu17WP7eLWEA" name="ticket_Id" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-v_gkQpkEeeu17WP7eLWEA" name="orders_detail" type="_-vkp0ApkEeeu17WP7eLWEA" association="_-v-5gApkEeeu17WP7eLWEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-v_gkgpkEeeu17WP7eLWEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-v_gkwpkEeeu17WP7eLWEA" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_-v1vkwpkEeeu17WP7eLWEA" name="Ticket"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-v5Z8ApkEeeu17WP7eLWEA" name="Ticket_Cart">
+      <ownedAttribute xmi:id="_-v5Z8QpkEeeu17WP7eLWEA" name="customer" type="_-uOmAApkEeeu17WP7eLWEA" association="_-ufEsApkEeeu17WP7eLWEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-v5Z8gpkEeeu17WP7eLWEA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-v5Z8wpkEeeu17WP7eLWEA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-v6BAApkEeeu17WP7eLWEA" name="cart_Id" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-v6BAQpkEeeu17WP7eLWEA" name="date" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-v6BAgpkEeeu17WP7eLWEA" name="quantity" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_-v6BAwpkEeeu17WP7eLWEA" name="Ticket_Cart"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-v-5gApkEeeu17WP7eLWEA" name="Ticket_Order" memberEnd="_-v-5gQpkEeeu17WP7eLWEA _-v_gkQpkEeeu17WP7eLWEA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-wCj4ApkEeeu17WP7eLWEA" name="Travel_Info">
+      <ownedAttribute xmi:id="_-wCj4QpkEeeu17WP7eLWEA" name="orders" type="_-vETgApkEeeu17WP7eLWEA" association="_-vgYYApkEeeu17WP7eLWEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-wCj4gpkEeeu17WP7eLWEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-wCj4wpkEeeu17WP7eLWEA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-wDK8ApkEeeu17WP7eLWEA" name="travel_Cost" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-wDK8QpkEeeu17WP7eLWEA" name="travel_Id" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-wDK8gpkEeeu17WP7eLWEA" name="travel_RegionId" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-wDK8wpkEeeu17WP7eLWEA" name="travel_Type" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_-wDyAApkEeeu17WP7eLWEA" name="Travel_Info"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-wIDcApkEeeu17WP7eLWEA" name="User">
+      <ownedAttribute xmi:id="_-wIDcQpkEeeu17WP7eLWEA" name="Method" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-wIqgApkEeeu17WP7eLWEA" name="user_Id" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-wzY4QpkEeeu17WP7eLWEA" name="vendingMachine" type="_-wUQsApkEeeu17WP7eLWEA" association="_-wzY4ApkEeeu17WP7eLWEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-wz_8ApkEeeu17WP7eLWEA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-wz_8QpkEeeu17WP7eLWEA" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_-wIqgQpkEeeu17WP7eLWEA" name="User"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-wUQsApkEeeu17WP7eLWEA" name="VendingMachine" classifierBehavior="_-wWs8ApkEeeu17WP7eLWEA">
+      <ownedAttribute xmi:id="_-wUQsQpkEeeu17WP7eLWEA" name="description" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-wU3wApkEeeu17WP7eLWEA" name="machine_id" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-wU3wQpkEeeu17WP7eLWEA" name="name" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-wU3wgpkEeeu17WP7eLWEA" name="ticketNumber" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-wz_8gpkEeeu17WP7eLWEA" name="user" type="_-wIDcApkEeeu17WP7eLWEA" association="_-wzY4ApkEeeu17WP7eLWEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-w0nAApkEeeu17WP7eLWEA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-w0nAQpkEeeu17WP7eLWEA" value="1"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_-wWs8ApkEeeu17WP7eLWEA" name="VendingMachine">
+        <region xmi:id="_-wXUAApkEeeu17WP7eLWEA" name="VendingMachine">
+          <transition xmi:id="_-wqO8ApkEeeu17WP7eLWEA" name="Initialize" source="_-wYiIApkEeeu17WP7eLWEA" target="_-wZJMApkEeeu17WP7eLWEA"/>
+          <transition xmi:id="_-wrdEApkEeeu17WP7eLWEA" name="ChoseOrder" source="_-wZJMApkEeeu17WP7eLWEA" target="_-wZJMQpkEeeu17WP7eLWEA">
+            <trigger xmi:id="_-wrdEQpkEeeu17WP7eLWEA" name="ClickOnOrder_trigger" event="_-uE1AQpkEeeu17WP7eLWEA"/>
+          </transition>
+          <transition xmi:id="_-wsEIApkEeeu17WP7eLWEA" name="IfThereIs" source="_-wZJMQpkEeeu17WP7eLWEA" target="_-wZJMgpkEeeu17WP7eLWEA"/>
+          <transition xmi:id="_-wsEIQpkEeeu17WP7eLWEA" name="NotFind" source="_-wZJMQpkEeeu17WP7eLWEA" target="_-wpA0ApkEeeu17WP7eLWEA"/>
+          <transition xmi:id="_-wsrMApkEeeu17WP7eLWEA" name="SelectAgain" source="_-wpA0ApkEeeu17WP7eLWEA" target="_-wZJMApkEeeu17WP7eLWEA">
+            <trigger xmi:id="_-wsrMQpkEeeu17WP7eLWEA" name="Reselect_trigger" event="_-vtzwQpkEeeu17WP7eLWEA"/>
+          </transition>
+          <transition xmi:id="_-wtSQApkEeeu17WP7eLWEA" name="Stopping" source="_-wpA0ApkEeeu17WP7eLWEA" target="_-wpn4QpkEeeu17WP7eLWEA">
+            <trigger xmi:id="_-wtSQQpkEeeu17WP7eLWEA" name="Stop_trigger" event="_-vxeIApkEeeu17WP7eLWEA"/>
+          </transition>
+          <transition xmi:id="_-wt5UApkEeeu17WP7eLWEA" name="StoppingAvail" source="_-wZJMgpkEeeu17WP7eLWEA" target="_-wpn4QpkEeeu17WP7eLWEA">
+            <trigger xmi:id="_-wt5UQpkEeeu17WP7eLWEA" name="Stop_trigger" event="_-vxeIApkEeeu17WP7eLWEA"/>
+          </transition>
+          <transition xmi:id="_-wt5UgpkEeeu17WP7eLWEA" name="Buying" source="_-wZJMgpkEeeu17WP7eLWEA" target="_-wpn4ApkEeeu17WP7eLWEA">
+            <trigger xmi:id="_-wugYApkEeeu17WP7eLWEA" name="Buy_trigger" event="_-tj3oApkEeeu17WP7eLWEA"/>
+          </transition>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_-wYiIApkEeeu17WP7eLWEA" name="Init"/>
+          <subvertex xmi:type="uml:State" xmi:id="_-wZJMApkEeeu17WP7eLWEA" name="SelectOrder"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_-wZJMQpkEeeu17WP7eLWEA" name="CheckTicket" kind="choice"/>
+          <subvertex xmi:type="uml:State" xmi:id="_-wZJMgpkEeeu17WP7eLWEA" name="Available"/>
+          <subvertex xmi:type="uml:State" xmi:id="_-wpA0ApkEeeu17WP7eLWEA" name="NotAvailable"/>
+          <subvertex xmi:type="uml:State" xmi:id="_-wpn4ApkEeeu17WP7eLWEA" name="GetTicket"/>
+          <subvertex xmi:type="uml:State" xmi:id="_-wpn4QpkEeeu17WP7eLWEA" name="Cancel"/>
+        </region>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_-wU3wwpkEeeu17WP7eLWEA" name="VendingMachine"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-wzY4ApkEeeu17WP7eLWEA" name="Vending_Users" memberEnd="_-wzY4QpkEeeu17WP7eLWEA _-wz_8gpkEeeu17WP7eLWEA"/>
+    <profileApplication xmi:id="_-l8MsApkEeeu17WP7eLWEA">
+      <eAnnotations xmi:id="_-l_QAApkEeeu17WP7eLWEA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Create xmi:id="_-ttBkApkEeeu17WP7eLWEA" base_BehavioralFeature="_-tp-QApkEeeu17WP7eLWEA"/>
+  <standard:Create xmi:id="_-uGDIApkEeeu17WP7eLWEA" base_BehavioralFeature="_-uFcEQpkEeeu17WP7eLWEA"/>
+  <standard:Create xmi:id="_-uJtgApkEeeu17WP7eLWEA" base_BehavioralFeature="_-uJGcQpkEeeu17WP7eLWEA"/>
+  <standard:Create xmi:id="_-uS3cApkEeeu17WP7eLWEA" base_BehavioralFeature="_-uSQYApkEeeu17WP7eLWEA"/>
+  <standard:Create xmi:id="_-vApIApkEeeu17WP7eLWEA" base_BehavioralFeature="_-vACEwpkEeeu17WP7eLWEA"/>
+  <standard:Create xmi:id="_-vFhoQpkEeeu17WP7eLWEA" base_BehavioralFeature="_-vFhoApkEeeu17WP7eLWEA"/>
+  <standard:Create xmi:id="_-vl38gpkEeeu17WP7eLWEA" base_BehavioralFeature="_-vl38QpkEeeu17WP7eLWEA"/>
+  <standard:Create xmi:id="_-vua0QpkEeeu17WP7eLWEA" base_BehavioralFeature="_-vua0ApkEeeu17WP7eLWEA"/>
+  <standard:Create xmi:id="_-vxeIwpkEeeu17WP7eLWEA" base_BehavioralFeature="_-vxeIgpkEeeu17WP7eLWEA"/>
+  <standard:Create xmi:id="_-v2WoApkEeeu17WP7eLWEA" base_BehavioralFeature="_-v1vkwpkEeeu17WP7eLWEA"/>
+  <standard:Create xmi:id="_-v6BBApkEeeu17WP7eLWEA" base_BehavioralFeature="_-v6BAwpkEeeu17WP7eLWEA"/>
+  <standard:Create xmi:id="_-wEZEApkEeeu17WP7eLWEA" base_BehavioralFeature="_-wDyAApkEeeu17WP7eLWEA"/>
+  <standard:Create xmi:id="_-wIqggpkEeeu17WP7eLWEA" base_BehavioralFeature="_-wIqgQpkEeeu17WP7eLWEA"/>
+  <standard:Create xmi:id="_-wU3xApkEeeu17WP7eLWEA" base_BehavioralFeature="_-wU3wwpkEeeu17WP7eLWEA"/>
+</xmi:XMI>

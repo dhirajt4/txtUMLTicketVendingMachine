@@ -1,0 +1,235 @@
+package model;
+signal ClickOption{}
+signal Reselect {}
+signal Stop{}
+signal ClickOnOrder{}
+signal Buy{}
+
+
+class VendingMachine {
+	int machine_id;
+	String name;
+	String description;
+	int ticketNumber ;
+	initial Init;
+	state SelectOrder;
+	choice CheckTicket ;
+	state Available;
+	state NotAvailable;
+	state GetTicket;
+	state Cancel ;  
+	
+	
+	transition Initialize {
+	from Init;
+	to SelectOrder;	
+	effect {
+			log("Starting to chose.");
+		}
+	}
+	
+
+	transition ChoseOrder{
+		from SelectOrder;
+		to CheckTicket ; 
+		trigger ClickOnOrder;
+	}
+	transition IfThereIs {
+		from CheckTicket ;
+		to Available ;
+		
+		guard ( ticketNumber > 0 ) ;
+		
+		
+	}
+	transition NotFind{
+	
+		from CheckTicket ;
+		to NotAvailable;
+		
+		guard (else);
+	
+	}
+	transition SelectAgain {
+		from NotAvailable ;
+		to SelectOrder ;
+		trigger Reselect ;
+	}
+	
+	transition Stopping {
+		from NotAvailable ;
+		to Cancel ;
+		trigger Stop;
+	}
+	transition StoppingAvail {
+		from Available ;
+		to Cancel ;
+		trigger Stop;
+	}
+	
+	transition Buying {
+		from Available ;
+		to GetTicket ;
+		trigger Buy ;
+	
+	}
+}
+
+class User {
+	String user_Id;
+	String Method;
+		
+}
+class Maintenance extends User {
+	String report;
+	String login_id;
+	String login_Pass ;
+}
+
+class Customer extends User{
+   
+   String customer_type ;
+   String card_info;
+   String name;
+   String email;
+}
+
+class Travel_Info {
+	String travel_Type;
+	int travel_Id;
+	int travel_Cost;
+	int travel_RegionId;
+	
+}
+
+class Ticket_Cart {
+	int cart_Id ; 
+	int quantity;
+	String date;
+}
+
+class Order {
+	
+	String date_created;
+	String date_travelled;
+	String status;
+}
+
+class Orders_Detail {
+
+int quantity;
+int unit_Cost;
+int subtotal;	
+}
+
+
+class Ticket extends Order{
+	
+    int ticket_Id;
+    String ticketName;
+    int price ;
+	
+}
+
+
+association Vending_Users {
+	0..1 VendingMachine vendingMachine;
+	0..1 User user;
+}
+
+composition Customer_Card {
+	container Customer customer;
+	0..* Ticket_Cart ticket_cart;
+}
+
+composition Customer_Order {
+	container Customer customer;
+	0..* Order orders;
+}
+
+association OrderTravelInfo {
+	1 Order orders;
+	1 Travel_Info travel_info;
+}
+
+composition ProductOrder {
+	container Order orders;
+	0..* Ticket ticket;
+}
+composition OrderHasFunctions {
+	 container Orders_Detail detail;
+	 1 Order orders;
+
+}
+
+association Ticket_Order {
+	1 Ticket ticket;
+	1 Orders_Detail orders_detail;
+}
+
+/*
+class OrderState{
+	int ticketNumber ;
+	initial Init;
+	state SelectOrder;
+	choice CheckTicket ;
+	state Available;
+	state NotAvailable;
+	state GetTicket;
+	state Cancel ;  
+	
+	
+	transition Initialize {
+	from Init;
+	to SelectOrder;	
+	effect {
+			log("Starting to chose.");
+		}
+}
+	
+
+transition ChoseOrder{
+	from SelectOrder;
+	to CheckTicket ; 
+	trigger ClickOnOrder;
+}
+transition IfThereIs {
+	from CheckTicket ;
+	to Available ;
+	
+	guard ( ticketNumber > 0 ) ;
+	
+	
+}
+transition NotFind{
+
+	from CheckTicket ;
+	to NotAvailable;
+	
+	guard (else);
+
+}
+transition SelectAgain {
+	from NotAvailable ;
+	to SelectOrder ;
+	trigger Reselect ;
+}
+
+transition Stopping {
+	from NotAvailable ;
+	to Cancel ;
+	trigger Stop;
+}
+transition StoppingAvail {
+	from Available ;
+	to Cancel ;
+	trigger Stop;
+}
+
+transition Buying {
+	from Available ;
+	to GetTicket ;
+	trigger Buy ;
+}
+}*/
+
