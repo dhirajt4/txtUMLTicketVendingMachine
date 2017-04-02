@@ -1,4 +1,4 @@
-# txtUMLTicketVendingMachine
+# txtUML Ticket Vending Machine
 Ticket Vending Machine using txtUML and Java
 Ticket Vending Machine written in txtUML (http://txtuml.inf.elte.hu/)
 
