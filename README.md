@@ -1,11 +1,11 @@
 # txtUML Ticket Vending Machine
 Ticket Vending Machine using txtUML and Java
 
-Ticket Vending Machine written in [txtUML](http://www.txtuml.inf.elte.hu). Textual, eXecutable, Translatable UML – an open source project to make model driven development easier. See the user documentation and installation at the [txtUML website](http://www.txtuml.inf.elte.hu) and see the [Reference](http://www.deva.web.elte.hu/pubwiki/doku.php?id=softtechlab2016fall:20160926). For developer documentation, see the [txtUML wiki](http://www.github.com/ELTE-Soft/txtUML/wiki).
+Ticket Vending Machine written in [txtUML](http://txtuml.inf.elte.hu). Textual, eXecutable, Translatable UML – an open source project to make model driven development easier. See the user documentation and installation at the [txtUML website](http://txtuml.inf.elte.hu) and see the [Reference](http://deva.web.elte.hu/pubwiki/doku.php?id=softtechlab2016fall:20160926). For developer documentation, see the [txtUML wiki](http://github.com/ELTE-Soft/txtUML/wiki).
 
 How to install/run the model
 
-Install the [txtUML](http://txtuml.inf.elte.hu/) in your Eclipse (currently only [Mars](http://www.eclipse.org/downloads/packages/release/Mars/2) version is supported) and download the zip of this project or do
+Install the [txtUML](http://txtuml.inf.elte.hu/releases/latest) in your Eclipse (currently only [Mars](http://eclipse.org/downloads/packages/release/Mars/2) version is supported) and download the zip of this project or do
 
 `git clone https://github.com/dhirajt4/txtUMLTicketVendingMachine.git `
 
