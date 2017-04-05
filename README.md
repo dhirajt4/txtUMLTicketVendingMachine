@@ -5,7 +5,7 @@ Ticket Vending Machine written in [txtUML](http://www.txtuml.inf.elte.hu). Textu
 
 How to install/run the model
 
-Install the [txtUML](http://www.txtuml.inf.elte.hu) in your Eclipse (currently only [Mars](http://www.eclipse.org/downloads/packages/release/Mars/2) version is supported) and download the zip of this project or do
+Install the [txtUML](http://txtuml.inf.elte.hu/) in your Eclipse (currently only [Mars](http://www.eclipse.org/downloads/packages/release/Mars/2) version is supported) and download the zip of this project or do
 
 `git clone https://github.com/dhirajt4/txtUMLTicketVendingMachine.git `
 
