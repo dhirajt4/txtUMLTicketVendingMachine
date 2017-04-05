@@ -7,7 +7,7 @@ How to install/run the model
 
 Install the txtUML in your Eclipse (currently only Mars version is supported) and download the zip of this project or do
 
-git clone https://github.com/dhirajt4/txtUMLTicketVendingMachine.git
+`git clone https://github.com/dhirajt4/txtUMLTicketVendingMachine.git `
 
 Go to Eclipse and do the following: File -> Import -> Existing Projects into Workspace
 
