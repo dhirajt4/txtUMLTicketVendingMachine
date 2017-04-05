@@ -12,3 +12,6 @@ git clone https://github.com/dhirajt4/txtUMLTicketVendingMachine.git
 Go to Eclipse and do the following: File -> Import -> Existing Projects into Workspace
 
 Build the project using Project -> Build Project and run it. If there are any issues, use Project -> Clean..., then build and run the project again.
+
+
+![txtuml](https://cloud.githubusercontent.com/assets/23024996/24729822/4a27f954-1a60-11e7-917d-44422a1fec62.JPG)
