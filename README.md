@@ -1,6 +1,6 @@
 # txtUML Ticket Vending Machine
 Ticket Vending Machine using txtUML and Java
-Ticket Vending Machine written in txtUML (http://txtuml.inf.elte.hu/)
+Ticket Vending Machine written in txtUML (www.txtuml.inf.elte.hu/). Textual, eXecutable, Translatable UML – an open source project to make model driven development easier. See the user documentation and installation at the txtUML website (www.txtuml.inf.elte.hu/). For developer documentation, see the txtUML wiki (www.github.com/ELTE-Soft/txtUML/wiki).
 
 How to install/run the model
 
