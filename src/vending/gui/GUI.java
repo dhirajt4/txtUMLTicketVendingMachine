@@ -311,9 +311,7 @@ public class GUI extends javax.swing.JFrame implements GUIInterface {
 		G.setTitle("Ticket Vending Machine by Dhiraj Kumar Tripathi");
 		G.setVisible(true);
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> {
-            new GUI().setVisible(true);
-        });
+        
     }
 
                   
