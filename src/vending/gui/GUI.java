@@ -3,6 +3,7 @@
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.io.FileNotFoundException;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -278,7 +279,7 @@ public class GUI extends javax.swing.JFrame implements GUIInterface {
 
     private void btnBuyActionPerformed(java.awt.event.ActionEvent evt) {                                       
         // This will pay for purchase ticket
-        double money = 0;
+       try{ double money = 0;
         money = Double.parseDouble(moneyTF.getText());
         if (pecsRB.isSelected()){
         money = money - 4500;}
@@ -293,8 +294,15 @@ public class GUI extends javax.swing.JFrame implements GUIInterface {
         JOptionPane.showMessageDialog(rootPane, "Sorry you don't have Enough Balance");}
         else {
         changeTF.setText(Double.toString(money));
+        throw null;
         }
-        Action.send(new ClickOnOrder(), machine);
+        Action.send(new ClickOnOrder(), machine);}
+       catch (Exception e){
+           System.out.println(e instanceof NullPointerException);
+           System.out.println(e instanceof FileNotFoundException);
+          
+       }
+       
         
     }                                      
 
