@@ -6,7 +6,7 @@ import java.awt.Dimension;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-import model.ClickOnOrder;
+import model.Buy;
 import model.Reselect;
 import model.Stop;
 import hu.elte.txtuml.api.model.Action;
@@ -277,7 +277,7 @@ public class GUI extends javax.swing.JFrame implements GUIInterface {
 
     private void btnBuyActionPerformed(java.awt.event.ActionEvent evt) {                                       
         // This will pay for purchase ticket
-       try{ double money = 0;
+        double money = 0;
         money = Double.parseDouble(moneyTF.getText());
         if (pecsRB.isSelected()){
         money = money - 4500;}
@@ -292,13 +292,10 @@ public class GUI extends javax.swing.JFrame implements GUIInterface {
         JOptionPane.showMessageDialog(rootPane, "Sorry you don't have Enough Balance");}
         else {
         changeTF.setText(Double.toString(money));
-        throw null;
+        
         }
-        Action.send(new ClickOnOrder(), machine);}
-       catch (Exception e){
-           
-          
-       }
+        Action.send(new Buy(), machine);
+      
        
         
     }                                      
