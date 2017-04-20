@@ -3,8 +3,6 @@
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.io.FileNotFoundException;
-
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -298,8 +296,7 @@ public class GUI extends javax.swing.JFrame implements GUIInterface {
         }
         Action.send(new ClickOnOrder(), machine);}
        catch (Exception e){
-           System.out.println(e instanceof NullPointerException);
-           System.out.println(e instanceof FileNotFoundException);
+           
           
        }
        
