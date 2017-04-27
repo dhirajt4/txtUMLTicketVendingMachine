@@ -9,15 +9,15 @@ import javax.swing.JOptionPane;
 import model.Buy;
 import model.Reselect;
 import model.Stop;
+import model.Vending;
 import hu.elte.txtuml.api.model.Action;
 import hu.elte.txtuml.api.model.execution.ModelExecutor;
-import model.VendingMachine;
 
 
 @SuppressWarnings("serial")
 public class GUI extends javax.swing.JFrame implements GUIInterface {
 	
-	static VendingMachine machine;
+	static Vending machine;
 	 // Variables declaration - do not modify                     
     private javax.swing.JButton btnBuy ;
     private javax.swing.JButton btnCancel;
@@ -37,7 +37,7 @@ public class GUI extends javax.swing.JFrame implements GUIInterface {
    
     
     static void init (){
-		machine = Action.create(VendingMachine.class);
+		machine = Action.create(Vending.class);
 		Action.start(machine);
 		}
        
