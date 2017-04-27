@@ -1,0 +1,85 @@
+package model;
+
+import vending.gui.GUIInterface;
+import vending.gui.GUI;
+
+class Vending {
+	
+	GUIInterface gui;
+	//Timer timer;
+	int machine_id;
+	
+	String name;
+	
+	int ticketPrice ;
+	int money;
+	Vending(){
+		gui = new GUI();
+		//link (BtnBuy.machine , this);
+		
+	}
+	initial Init;
+	state SelectOrder;
+	choice CheckTicket ;
+	state Available;
+	state NotAvailable;
+	state GetTicket;
+	state Cancel ;
+	 
+	
+	
+	transition Initialize {
+	from Init;
+	to SelectOrder;	
+	effect {
+			log("Starting to chose.");
+		}
+	}
+	
+
+	transition ChoseOrder{
+		from SelectOrder;
+		to CheckTicket ; 
+		trigger ClickOnOrder;
+	}
+	transition IfThereIs {
+		from CheckTicket ;
+		to Available ;
+		
+		guard (money > ticketPrice  ) ;
+		
+		
+	}
+	transition NotFind{
+	
+		from CheckTicket ;
+		to NotAvailable;
+		
+		guard (else);
+	
+	}
+	transition SelectAgain {
+		from NotAvailable ;
+		to SelectOrder ;
+		trigger Reselect ;
+	}
+	
+	transition Buying {
+		from Available ;
+		to GetTicket ;
+		trigger Buy ;
+		effect {
+			//this->(BtnBuy.machine).selectAny().gui.btnBuyActionPerformed();
+		}
+	
+	}
+	
+	transition Stopping {
+		from NotAvailable ;
+		to Cancel ;
+		trigger Stop;
+	}
+	
+	
+	
+}
